@@ -29,9 +29,14 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   cupertino_icons: ^1.0.2
+  dots_indicator: ^4.0.1
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  flutter_screenutil: ^5.9.3
   flutter_svg: ^2.0.6
+  google_fonts: ^5.1.0
 
 dev_dependencies:
   flutter_launcher_icons: ^0.13.0
@@ -75,7 +80,6 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
-
 flutter_launcher_icons:
   android: "launcher_icon"
   ios: true
@@ -86,4 +90,6 @@ flutter_assets:
   assets_path: assets/images/
   output_path: lib/core/utils/
   filename: app_images.dart
-  field_prefix:
+  field_prefix: null
+flutter_intl:
+  enabled: true
