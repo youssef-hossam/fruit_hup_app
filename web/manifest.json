@@ -1,6 +1,6 @@
 {
-    "name": "fruit_hub",
-    "short_name": "fruit_hub",
+    "name": "fruit_hub_app",
+    "short_name": "fruit_hub_app",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

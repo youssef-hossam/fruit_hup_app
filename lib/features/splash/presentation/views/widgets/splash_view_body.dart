@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:fruit_hub/core/utils/app_images.dart';
-import 'package:fruit_hub/features/on_boarding/presentation/views/on_boarding_view.dart';
+import 'package:fruit_hub_app/core/utils/app_images.dart';
+import 'package:fruit_hub_app/features/on_boarding/presentation/views/on_boarding_view.dart';
 
 class SplashViewBody extends StatefulWidget {
   const SplashViewBody({super.key});

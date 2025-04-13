@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:fruit_hub/core/helper_function/on_genrate_route.dart';
-import 'package:fruit_hub/features/splash/presentation/views/splash_view.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'generated/l10n.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:fruit_hub_app/features/splash/presentation/views/splash_view.dart';
+import 'package:fruit_hub_app/generated/l10n.dart';
+
+import 'core/helper_function/on_genrate_route.dart';
+// import 'package:flutter_localizations/flutter_localizations.dart';
 
 void main() {
   runApp(const FruitHub());

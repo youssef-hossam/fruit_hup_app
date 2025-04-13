@@ -1,4 +1,4 @@
-# fruit_hub
+# fruit_hub_app
 
 A new Flutter project.
 
