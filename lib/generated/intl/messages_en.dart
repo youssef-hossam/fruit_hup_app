@@ -22,6 +22,22 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "DontHaveAnAccount":
+            MessageLookupByLibrary.simpleMessage("Don\'t have an account ?"),
+        "acceptTerms": MessageLookupByLibrary.simpleMessage(
+            "By creating an account, you agree to"),
+        "alreadyHaveAnAccount":
+            MessageLookupByLibrary.simpleMessage("Already have an account? "),
+        "createAccount":
+            MessageLookupByLibrary.simpleMessage("Create an Account"),
+        "createNewAccount":
+            MessageLookupByLibrary.simpleMessage("Create New Account"),
+        "email": MessageLookupByLibrary.simpleMessage("Email"),
+        "forgotPassword":
+            MessageLookupByLibrary.simpleMessage("Forgot Password?"),
+        "fullName": MessageLookupByLibrary.simpleMessage("Full Name"),
+        "login": MessageLookupByLibrary.simpleMessage("Login"),
+        "newAccount": MessageLookupByLibrary.simpleMessage("New Account"),
         "onBoardingSubTitle1": MessageLookupByLibrary.simpleMessage(
             "Discover a unique shopping experience with FruitHUB. Explore our wide selection of premium fresh fruits and enjoy the best deals and top quality."),
         "onBoardingSubTitle2": MessageLookupByLibrary.simpleMessage(
@@ -29,7 +45,17 @@ class MessageLookup extends MessageLookupByLibrary {
         "onBoardingTitle1": MessageLookupByLibrary.simpleMessage("Welcome to"),
         "onBoardingTitle2":
             MessageLookupByLibrary.simpleMessage("Search and Shop"),
+        "or": MessageLookupByLibrary.simpleMessage("Or"),
+        "password": MessageLookupByLibrary.simpleMessage("Password"),
+        "registerWithApple":
+            MessageLookupByLibrary.simpleMessage("Register with Apple"),
+        "registerWithFacebook":
+            MessageLookupByLibrary.simpleMessage("Register with Facebook"),
+        "registerWithGoogle":
+            MessageLookupByLibrary.simpleMessage("Register with Google"),
         "skip": MessageLookupByLibrary.simpleMessage("Skip"),
-        "startNow": MessageLookupByLibrary.simpleMessage("Start Now")
+        "startNow": MessageLookupByLibrary.simpleMessage("Start Now"),
+        "termsAndConditions":
+            MessageLookupByLibrary.simpleMessage("our Terms and Conditions")
       };
 }

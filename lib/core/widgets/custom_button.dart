@@ -15,7 +15,12 @@ class CustomButton extends StatelessWidget {
       width: double.infinity,
       child: TextButton(
         onPressed: onPress,
-        style: TextButton.styleFrom(backgroundColor: AppColors.green1500),
+        style: TextButton.styleFrom(
+          backgroundColor: AppColors.green1500,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(16.r),
+          ),
+        ),
         child: Text(
           text,
           style: AppStyles.bodyBaseBold.copyWith(color: Colors.white),

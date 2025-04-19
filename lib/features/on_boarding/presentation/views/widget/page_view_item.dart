@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:fruit_hub_app/constants.dart';
+import 'package:fruit_hub_app/core/services/shared_prefrences_singleton.dart';
 import 'package:fruit_hub_app/core/utils/app_styles.dart';
+import 'package:fruit_hub_app/features/auth/presentation/views/login_view.dart';
 import 'package:fruit_hub_app/generated/l10n.dart';
 
 class PageViewItem extends StatelessWidget {
@@ -43,7 +46,11 @@ class PageViewItem extends StatelessWidget {
                   child: TextButton(
                       style: const ButtonStyle(
                           splashFactory: NoSplash.splashFactory),
-                      onPressed: () {},
+                      onPressed: () {
+                        Pref.setBool(kIsOnbardingViewSeen, true);
+                        Navigator.pushReplacementNamed(
+                            context, LoginView.routeName);
+                      },
                       child: Text(S.of(context).skip,
                           style: AppStyles.bodySmallRegular)),
                 ),

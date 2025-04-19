@@ -1,8 +1,11 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:fruit_hub_app/constants.dart';
+import 'package:fruit_hub_app/core/services/shared_prefrences_singleton.dart';
 import 'package:fruit_hub_app/core/utils/app_colors.dart';
 import 'package:fruit_hub_app/core/widgets/custom_button.dart';
+import 'package:fruit_hub_app/features/auth/presentation/views/login_view.dart';
 import 'package:fruit_hub_app/features/on_boarding/presentation/views/widget/on_boarding_page_view.dart';
 import 'package:fruit_hub_app/generated/l10n.dart';
 
@@ -61,7 +64,10 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
               padding: EdgeInsets.symmetric(horizontal: 16.w),
               child: CustomButton(
                 text: S.of(context).startNow,
-                onPress: () {},
+                onPress: () {
+                  Pref.setBool(kIsOnbardingViewSeen, true);
+                  Navigator.pushReplacementNamed(context, LoginView.routeName);
+                },
               ),
             ),
           ),

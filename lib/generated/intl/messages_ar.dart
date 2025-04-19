@@ -22,6 +22,21 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "DontHaveAnAccount":
+            MessageLookupByLibrary.simpleMessage(" لا تمتلك حساب؟"),
+        "acceptTerms": MessageLookupByLibrary.simpleMessage(
+            "من خلال إنشاء حساب ، فإنك توافق على"),
+        "alreadyHaveAnAccount":
+            MessageLookupByLibrary.simpleMessage("تمتلك حساب بالفعل؟ "),
+        "createAccount": MessageLookupByLibrary.simpleMessage("قم بإنشاء حساب"),
+        "createNewAccount":
+            MessageLookupByLibrary.simpleMessage("إنشاء حساب جديد"),
+        "email": MessageLookupByLibrary.simpleMessage("البريد الالكتروني"),
+        "forgotPassword":
+            MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور؟"),
+        "fullName": MessageLookupByLibrary.simpleMessage("الاسم كامل"),
+        "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
+        "newAccount": MessageLookupByLibrary.simpleMessage("حساب جديد"),
         "onBoardingSubTitle1": MessageLookupByLibrary.simpleMessage(
             "اكتشف تجربة تسوق فريدة مع FruitHUB. استكشف مجموعتنا الواسعة من الفواكه الطازجة الممتازة\n واحصل على أفضل العروض والجودة العالية."),
         "onBoardingSubTitle2": MessageLookupByLibrary.simpleMessage(
@@ -29,7 +44,17 @@ class MessageLookup extends MessageLookupByLibrary {
         "onBoardingTitle1":
             MessageLookupByLibrary.simpleMessage("مرحبًا بك في"),
         "onBoardingTitle2": MessageLookupByLibrary.simpleMessage("ابحث وتسوق"),
+        "or": MessageLookupByLibrary.simpleMessage("أو"),
+        "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
+        "registerWithApple":
+            MessageLookupByLibrary.simpleMessage("تسجيل بواسطه أبل"),
+        "registerWithFacebook":
+            MessageLookupByLibrary.simpleMessage("تسجيل بواسطه فيسبوك"),
+        "registerWithGoogle":
+            MessageLookupByLibrary.simpleMessage("تسجيل بواسطه جوجل"),
         "skip": MessageLookupByLibrary.simpleMessage("تخط"),
-        "startNow": MessageLookupByLibrary.simpleMessage("ابدأ الان")
+        "startNow": MessageLookupByLibrary.simpleMessage("ابدأ الان"),
+        "termsAndConditions":
+            MessageLookupByLibrary.simpleMessage(" الشروط والأحكام الخاصة بنا")
       };
 }
