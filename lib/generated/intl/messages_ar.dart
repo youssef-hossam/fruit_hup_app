@@ -24,19 +24,33 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "DontHaveAnAccount":
             MessageLookupByLibrary.simpleMessage(" لا تمتلك حساب؟"),
+        "PleaseEnterSomeText":
+            MessageLookupByLibrary.simpleMessage("الرجاء إدخال نص ما"),
         "acceptTerms": MessageLookupByLibrary.simpleMessage(
             "من خلال إنشاء حساب ، فإنك توافق على"),
         "alreadyHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("تمتلك حساب بالفعل؟ "),
+        "anErrorOccurred": MessageLookupByLibrary.simpleMessage(
+            "حدث خطأ ما. حاول مرة أخرى لاحقًا."),
+        "checkYourConection": MessageLookupByLibrary.simpleMessage(
+            " تحقق من اتصالك بالإنترنت , ثم حاول مره أخرى"),
         "createAccount": MessageLookupByLibrary.simpleMessage("قم بإنشاء حساب"),
         "createNewAccount":
             MessageLookupByLibrary.simpleMessage("إنشاء حساب جديد"),
         "email": MessageLookupByLibrary.simpleMessage("البريد الالكتروني"),
+        "emailAlreadyInUse": MessageLookupByLibrary.simpleMessage(
+            "لقد قمت بالتسجيل مسبقا بالرجاء تسجيل الدخول"),
+        "errorOccurredTryAgain": MessageLookupByLibrary.simpleMessage(
+            "حدث خطأ ما. حاول مرة أخرى لاحقًا."),
         "forgotPassword":
             MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور؟"),
         "fullName": MessageLookupByLibrary.simpleMessage("الاسم كامل"),
+        "invalidEmail":
+            MessageLookupByLibrary.simpleMessage("البريد الإلكتروني غير صالح"),
         "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
         "newAccount": MessageLookupByLibrary.simpleMessage("حساب جديد"),
+        "noUserFoundForThatEmail": MessageLookupByLibrary.simpleMessage(
+            "لا يوجد مستخدم مسجل بهذا البريد الإلكتروني"),
         "onBoardingSubTitle1": MessageLookupByLibrary.simpleMessage(
             "اكتشف تجربة تسوق فريدة مع FruitHUB. استكشف مجموعتنا الواسعة من الفواكه الطازجة الممتازة\n واحصل على أفضل العروض والجودة العالية."),
         "onBoardingSubTitle2": MessageLookupByLibrary.simpleMessage(
@@ -46,6 +60,8 @@ class MessageLookup extends MessageLookupByLibrary {
         "onBoardingTitle2": MessageLookupByLibrary.simpleMessage("ابحث وتسوق"),
         "or": MessageLookupByLibrary.simpleMessage("أو"),
         "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
+        "pleaseAcceptTerms":
+            MessageLookupByLibrary.simpleMessage("يرجى قبول الشروط والأحكام"),
         "registerWithApple":
             MessageLookupByLibrary.simpleMessage("تسجيل بواسطه أبل"),
         "registerWithFacebook":
@@ -55,6 +71,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "skip": MessageLookupByLibrary.simpleMessage("تخط"),
         "startNow": MessageLookupByLibrary.simpleMessage("ابدأ الان"),
         "termsAndConditions":
-            MessageLookupByLibrary.simpleMessage(" الشروط والأحكام الخاصة بنا")
+            MessageLookupByLibrary.simpleMessage(" الشروط والأحكام الخاصة بنا"),
+        "weakPassword": MessageLookupByLibrary.simpleMessage(
+            "كلمة المرور المقدمة ضعيفة جدًا."),
+        "wrongEmailOrPassword": MessageLookupByLibrary.simpleMessage(
+            "البريد الإلكتروني أو كلمة المرور غير صحيحة"),
+        "wrongPasswordProvidedForThatUser":
+            MessageLookupByLibrary.simpleMessage(
+                "كلمة المرور المقدمة لهذا المستخدم غير صحيحة")
       };
 }

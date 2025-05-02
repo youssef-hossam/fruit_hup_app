@@ -20,5 +20,16 @@
     "fullName": "Full Name",
     "acceptTerms": "By creating an account, you agree to",
     "termsAndConditions": "our Terms and Conditions",
-    "alreadyHaveAnAccount": "Already have an account? "
+    "alreadyHaveAnAccount": "Already have an account? ",
+    "PleaseEnterSomeText": "Please enter some text",
+    "weakPassword": "The password provided is too weak.",
+    "emailAlreadyInUse": "You have already registered, please log in",
+    "errorOccurredTryAgain": "An error occurred. Please try again later.",
+    "pleaseAcceptTerms": "Please accept the terms and conditions",
+    "anErrorOccurred": "An error occurred. Please try again later.",
+    "checkYourConection": "Check your connection, then try again",
+    "noUserFoundForThatEmail": "No user found for that email",
+    "wrongPasswordProvidedForThatUser": "The password provided for that user is incorrect",
+    "wrongEmailOrPassword": "Email or password is incorrect",
+    "invalidEmail": "Invalid email"
 }

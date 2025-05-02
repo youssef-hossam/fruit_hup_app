@@ -24,20 +24,33 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "DontHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("Don\'t have an account ?"),
+        "PleaseEnterSomeText":
+            MessageLookupByLibrary.simpleMessage("Please enter some text"),
         "acceptTerms": MessageLookupByLibrary.simpleMessage(
             "By creating an account, you agree to"),
         "alreadyHaveAnAccount":
             MessageLookupByLibrary.simpleMessage("Already have an account? "),
+        "anErrorOccurred": MessageLookupByLibrary.simpleMessage(
+            "An error occurred. Please try again later."),
+        "checkYourConection": MessageLookupByLibrary.simpleMessage(
+            "Check your connection, then try again"),
         "createAccount":
             MessageLookupByLibrary.simpleMessage("Create an Account"),
         "createNewAccount":
             MessageLookupByLibrary.simpleMessage("Create New Account"),
         "email": MessageLookupByLibrary.simpleMessage("Email"),
+        "emailAlreadyInUse": MessageLookupByLibrary.simpleMessage(
+            "You have already registered, please log in"),
+        "errorOccurredTryAgain": MessageLookupByLibrary.simpleMessage(
+            "An error occurred. Please try again later."),
         "forgotPassword":
             MessageLookupByLibrary.simpleMessage("Forgot Password?"),
         "fullName": MessageLookupByLibrary.simpleMessage("Full Name"),
+        "invalidEmail": MessageLookupByLibrary.simpleMessage("Invalid email"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
         "newAccount": MessageLookupByLibrary.simpleMessage("New Account"),
+        "noUserFoundForThatEmail": MessageLookupByLibrary.simpleMessage(
+            "No user found for that email"),
         "onBoardingSubTitle1": MessageLookupByLibrary.simpleMessage(
             "Discover a unique shopping experience with FruitHUB. Explore our wide selection of premium fresh fruits and enjoy the best deals and top quality."),
         "onBoardingSubTitle2": MessageLookupByLibrary.simpleMessage(
@@ -47,6 +60,8 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Search and Shop"),
         "or": MessageLookupByLibrary.simpleMessage("Or"),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
+        "pleaseAcceptTerms": MessageLookupByLibrary.simpleMessage(
+            "Please accept the terms and conditions"),
         "registerWithApple":
             MessageLookupByLibrary.simpleMessage("Register with Apple"),
         "registerWithFacebook":
@@ -56,6 +71,13 @@ class MessageLookup extends MessageLookupByLibrary {
         "skip": MessageLookupByLibrary.simpleMessage("Skip"),
         "startNow": MessageLookupByLibrary.simpleMessage("Start Now"),
         "termsAndConditions":
-            MessageLookupByLibrary.simpleMessage("our Terms and Conditions")
+            MessageLookupByLibrary.simpleMessage("our Terms and Conditions"),
+        "weakPassword": MessageLookupByLibrary.simpleMessage(
+            "The password provided is too weak."),
+        "wrongEmailOrPassword": MessageLookupByLibrary.simpleMessage(
+            "Email or password is incorrect"),
+        "wrongPasswordProvidedForThatUser":
+            MessageLookupByLibrary.simpleMessage(
+                "The password provided for that user is incorrect")
       };
 }

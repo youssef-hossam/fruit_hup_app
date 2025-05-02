@@ -20,5 +20,16 @@
     "fullName": "الاسم كامل",
     "acceptTerms": "من خلال إنشاء حساب ، فإنك توافق على",
     "termsAndConditions": " الشروط والأحكام الخاصة بنا",
-    "alreadyHaveAnAccount": "تمتلك حساب بالفعل؟ "
+    "alreadyHaveAnAccount": "تمتلك حساب بالفعل؟ ",
+    "PleaseEnterSomeText": "الرجاء إدخال نص ما",
+    "weakPassword": "كلمة المرور المقدمة ضعيفة جدًا.",
+    "emailAlreadyInUse": "لقد قمت بالتسجيل مسبقا بالرجاء تسجيل الدخول",
+    "errorOccurredTryAgain": "حدث خطأ ما. حاول مرة أخرى لاحقًا.",
+    "pleaseAcceptTerms": "يرجى قبول الشروط والأحكام",
+    "anErrorOccurred": "حدث خطأ ما. حاول مرة أخرى لاحقًا.",
+    "checkYourConection": " تحقق من اتصالك بالإنترنت , ثم حاول مره أخرى",
+    "noUserFoundForThatEmail": "لا يوجد مستخدم مسجل بهذا البريد الإلكتروني",
+    "wrongPasswordProvidedForThatUser": "كلمة المرور المقدمة لهذا المستخدم غير صحيحة",
+    "wrongEmailOrPassword": "البريد الإلكتروني أو كلمة المرور غير صحيحة",
+    "invalidEmail": "البريد الإلكتروني غير صالح"
 }

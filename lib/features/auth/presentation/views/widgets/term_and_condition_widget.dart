@@ -7,8 +7,11 @@ import 'package:fruit_hub_app/core/widgets/custom_text_field.dart';
 import 'package:fruit_hub_app/generated/l10n.dart';
 
 class TermAndConditionWidget extends StatefulWidget {
+  final ValueChanged<bool> onChanged;
+
   const TermAndConditionWidget({
     super.key,
+    required this.onChanged,
   });
 
   @override
@@ -17,6 +20,8 @@ class TermAndConditionWidget extends StatefulWidget {
 
 class _TermAndConditionWidgetState extends State<TermAndConditionWidget> {
   bool isChecked = false;
+
+  _TermAndConditionWidgetState();
   @override
   Widget build(BuildContext context) {
     return Row(children: [
@@ -30,9 +35,9 @@ class _TermAndConditionWidgetState extends State<TermAndConditionWidget> {
                 borderRadius: BorderRadius.circular(5.r)),
             value: isChecked,
             onChanged: (value) {
-              value = !isChecked;
               setState(() {
                 isChecked = value!;
+                widget.onChanged(value);
               });
               // Handle checkbox state change
             },

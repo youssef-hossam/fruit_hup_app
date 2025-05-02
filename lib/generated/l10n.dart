@@ -269,6 +269,116 @@ class S {
       args: [],
     );
   }
+
+  /// `Please enter some text`
+  String get PleaseEnterSomeText {
+    return Intl.message(
+      'Please enter some text',
+      name: 'PleaseEnterSomeText',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The password provided is too weak.`
+  String get weakPassword {
+    return Intl.message(
+      'The password provided is too weak.',
+      name: 'weakPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `You have already registered, please log in`
+  String get emailAlreadyInUse {
+    return Intl.message(
+      'You have already registered, please log in',
+      name: 'emailAlreadyInUse',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `An error occurred. Please try again later.`
+  String get errorOccurredTryAgain {
+    return Intl.message(
+      'An error occurred. Please try again later.',
+      name: 'errorOccurredTryAgain',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please accept the terms and conditions`
+  String get pleaseAcceptTerms {
+    return Intl.message(
+      'Please accept the terms and conditions',
+      name: 'pleaseAcceptTerms',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `An error occurred. Please try again later.`
+  String get anErrorOccurred {
+    return Intl.message(
+      'An error occurred. Please try again later.',
+      name: 'anErrorOccurred',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Check your connection, then try again`
+  String get checkYourConection {
+    return Intl.message(
+      'Check your connection, then try again',
+      name: 'checkYourConection',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `No user found for that email`
+  String get noUserFoundForThatEmail {
+    return Intl.message(
+      'No user found for that email',
+      name: 'noUserFoundForThatEmail',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `The password provided for that user is incorrect`
+  String get wrongPasswordProvidedForThatUser {
+    return Intl.message(
+      'The password provided for that user is incorrect',
+      name: 'wrongPasswordProvidedForThatUser',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email or password is incorrect`
+  String get wrongEmailOrPassword {
+    return Intl.message(
+      'Email or password is incorrect',
+      name: 'wrongEmailOrPassword',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Invalid email`
+  String get invalidEmail {
+    return Intl.message(
+      'Invalid email',
+      name: 'invalidEmail',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

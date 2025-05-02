@@ -4,35 +4,48 @@ import 'package:fruit_hub_app/core/utils/app_colors.dart';
 import 'package:fruit_hub_app/core/utils/app_styles.dart';
 import 'package:fruit_hub_app/generated/l10n.dart';
 
-class CustomTextField extends StatelessWidget {
-  const CustomTextField(
-      {super.key,
-      required this.hintText,
-      this.suffixIcon,
-      this.keyboardType,
-      this.onSaved});
+class PasswordField extends StatefulWidget {
+  const PasswordField(
+      {super.key, required this.hintText, this.keyboardType, this.onSaved});
 
   final String hintText;
-  final Widget? suffixIcon;
   final TextInputType? keyboardType;
   final void Function(String?)? onSaved;
+
+  @override
+  State<PasswordField> createState() => _PasswordFieldState();
+}
+
+class _PasswordFieldState extends State<PasswordField> {
+  bool isObscure = false;
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+        obscureText: isObscure,
         validator: (value) {
           if (value == null || value.isEmpty) {
             return S.of(context).PleaseEnterSomeText;
           }
           return null;
         },
-        onSaved: onSaved,
-        keyboardType: keyboardType,
+        onSaved: widget.onSaved,
+        keyboardType: widget.keyboardType,
         decoration: InputDecoration(
-          hintText: hintText,
+          hintText: widget.hintText,
           hintStyle:
               AppStyles.bodySmallBold.copyWith(color: AppColors.grayscale400),
           border: buildBorder(),
-          suffixIcon: suffixIcon,
+          suffixIcon: GestureDetector(
+              onTap: () {
+                setState(() {
+                  isObscure = !isObscure;
+                });
+              },
+              child: isObscure
+                  ? const Icon(Icons.visibility_rounded,
+                      color: Color(0xffC9CECF))
+                  : const Icon(Icons.visibility_off_rounded,
+                      color: Color(0xffC9CECF))),
           filled: true,
           fillColor: const Color(0xffF9FAFA),
           enabledBorder: buildBorder(),
