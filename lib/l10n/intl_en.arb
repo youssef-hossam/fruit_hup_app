@@ -31,5 +31,14 @@
     "noUserFoundForThatEmail": "No user found for that email",
     "wrongPasswordProvidedForThatUser": "The password provided for that user is incorrect",
     "wrongEmailOrPassword": "Email or password is incorrect",
-    "invalidEmail": "Invalid email"
+    "invalidEmail": "Invalid email",
+    "eidVoucher": "Eid Offers",
+    "discount": "25% Offers",
+    "shoppingNow": "Shop Now",
+    "mostSelled": " Most Sold",
+    "more": "More",
+    "home": "Home",
+    "cart": "Cart",
+    "profile": "Profile",
+    "products": "Products"
 }

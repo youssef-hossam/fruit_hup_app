@@ -379,6 +379,96 @@ class S {
       args: [],
     );
   }
+
+  /// `Eid Offers`
+  String get eidVoucher {
+    return Intl.message(
+      'Eid Offers',
+      name: 'eidVoucher',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `25% Offers`
+  String get discount {
+    return Intl.message(
+      '25% Offers',
+      name: 'discount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Shop Now`
+  String get shoppingNow {
+    return Intl.message(
+      'Shop Now',
+      name: 'shoppingNow',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// ` Most Sold`
+  String get mostSelled {
+    return Intl.message(
+      ' Most Sold',
+      name: 'mostSelled',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `More`
+  String get more {
+    return Intl.message(
+      'More',
+      name: 'more',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Home`
+  String get home {
+    return Intl.message(
+      'Home',
+      name: 'home',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Cart`
+  String get cart {
+    return Intl.message(
+      'Cart',
+      name: 'cart',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Profile`
+  String get profile {
+    return Intl.message(
+      'Profile',
+      name: 'profile',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Products`
+  String get products {
+    return Intl.message(
+      'Products',
+      name: 'products',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

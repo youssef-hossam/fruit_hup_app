@@ -1,17 +1,20 @@
 import 'dart:developer';
 
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import 'package:fruit_hub_app/core/errors/exceptions.dart';
 import 'package:fruit_hub_app/generated/l10n.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
 class FirebaseAuthService {
+  deleteUser() async {
+    await FirebaseAuth.instance.currentUser!.delete();
+  }
+
   Future<User> createUserWithEmailAndPassword({
     required String email,
     required String password,
+    required String name,
   }) async {
     try {
       final credential =
@@ -19,6 +22,8 @@ class FirebaseAuthService {
         email: email,
         password: password,
       );
+      await credential.user!.updateDisplayName(name);
+
       return credential.user!;
     } on FirebaseAuthException catch (e) {
       log('Exception in authService.createUserWithEmailAndPassword: ${e.toString()} , ${e.code}');
@@ -110,4 +115,6 @@ class FirebaseAuthService {
 
     return userCredential.user!;
   }
+
+  bool isLoggedIn() => FirebaseAuth.instance.currentUser != null;
 }

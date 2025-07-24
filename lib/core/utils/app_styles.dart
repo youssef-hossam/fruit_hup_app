@@ -100,6 +100,11 @@ abstract class AppStyles {
     fontWeight: FontWeight.w700,
     height: 1.7,
   );
+  static TextStyle bodySmallsemiBold = GoogleFonts.cairo(
+    fontSize: 13.sp,
+    fontWeight: FontWeight.w600,
+    height: 1.7,
+  );
 
   static TextStyle bodyXSmallRegular = GoogleFonts.cairo(
     fontSize: 11.sp,
@@ -110,6 +115,12 @@ abstract class AppStyles {
   static TextStyle bodyXSmallBold = GoogleFonts.cairo(
     fontSize: 11.sp,
     fontWeight: FontWeight.w700,
+    height: 1.4,
+  );
+
+  static TextStyle bodyXSmallSemiBold = GoogleFonts.cairo(
+    fontSize: 11.sp,
+    fontWeight: FontWeight.w600,
     height: 1.4,
   );
 }

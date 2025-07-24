@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -25,14 +27,20 @@ class SocialRegisterButtons extends StatelessWidget {
         SizedBox(
           height: 16.h,
         ),
-        SocialRegisterButton(
-          onPress: () {},
-          socialIcon: Assets.imagesAppleIcon,
-          socialText: S.of(context).registerWithApple,
-        ),
-        SizedBox(
-          height: 16.h,
-        ),
+        Platform.isIOS
+            ? Column(
+                children: [
+                  SocialRegisterButton(
+                    onPress: () {},
+                    socialIcon: Assets.imagesAppleIcon,
+                    socialText: S.of(context).registerWithApple,
+                  ),
+                  SizedBox(
+                    height: 16.h,
+                  ),
+                ],
+              )
+            : const SizedBox(),
         SocialRegisterButton(
           onPress: () {
             context.read<SignInCubit>().signInWithFacebook();

@@ -32,12 +32,15 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Already have an account? "),
         "anErrorOccurred": MessageLookupByLibrary.simpleMessage(
             "An error occurred. Please try again later."),
+        "cart": MessageLookupByLibrary.simpleMessage("Cart"),
         "checkYourConection": MessageLookupByLibrary.simpleMessage(
             "Check your connection, then try again"),
         "createAccount":
             MessageLookupByLibrary.simpleMessage("Create an Account"),
         "createNewAccount":
             MessageLookupByLibrary.simpleMessage("Create New Account"),
+        "discount": MessageLookupByLibrary.simpleMessage("25% Offers"),
+        "eidVoucher": MessageLookupByLibrary.simpleMessage("Eid Offers"),
         "email": MessageLookupByLibrary.simpleMessage("Email"),
         "emailAlreadyInUse": MessageLookupByLibrary.simpleMessage(
             "You have already registered, please log in"),
@@ -46,8 +49,11 @@ class MessageLookup extends MessageLookupByLibrary {
         "forgotPassword":
             MessageLookupByLibrary.simpleMessage("Forgot Password?"),
         "fullName": MessageLookupByLibrary.simpleMessage("Full Name"),
+        "home": MessageLookupByLibrary.simpleMessage("Home"),
         "invalidEmail": MessageLookupByLibrary.simpleMessage("Invalid email"),
         "login": MessageLookupByLibrary.simpleMessage("Login"),
+        "more": MessageLookupByLibrary.simpleMessage("More"),
+        "mostSelled": MessageLookupByLibrary.simpleMessage(" Most Sold"),
         "newAccount": MessageLookupByLibrary.simpleMessage("New Account"),
         "noUserFoundForThatEmail": MessageLookupByLibrary.simpleMessage(
             "No user found for that email"),
@@ -62,12 +68,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "password": MessageLookupByLibrary.simpleMessage("Password"),
         "pleaseAcceptTerms": MessageLookupByLibrary.simpleMessage(
             "Please accept the terms and conditions"),
+        "products": MessageLookupByLibrary.simpleMessage("Products"),
+        "profile": MessageLookupByLibrary.simpleMessage("Profile"),
         "registerWithApple":
             MessageLookupByLibrary.simpleMessage("Register with Apple"),
         "registerWithFacebook":
             MessageLookupByLibrary.simpleMessage("Register with Facebook"),
         "registerWithGoogle":
             MessageLookupByLibrary.simpleMessage("Register with Google"),
+        "shoppingNow": MessageLookupByLibrary.simpleMessage("Shop Now"),
         "skip": MessageLookupByLibrary.simpleMessage("Skip"),
         "startNow": MessageLookupByLibrary.simpleMessage("Start Now"),
         "termsAndConditions":

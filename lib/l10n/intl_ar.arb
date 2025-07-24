@@ -31,5 +31,14 @@
     "noUserFoundForThatEmail": "لا يوجد مستخدم مسجل بهذا البريد الإلكتروني",
     "wrongPasswordProvidedForThatUser": "كلمة المرور المقدمة لهذا المستخدم غير صحيحة",
     "wrongEmailOrPassword": "البريد الإلكتروني أو كلمة المرور غير صحيحة",
-    "invalidEmail": "البريد الإلكتروني غير صالح"
+    "invalidEmail": "البريد الإلكتروني غير صالح",
+    "eidVoucher": "عروض العيد ",
+    "discount": "خصم 25%",
+    "shoppingNow": "تسوق الآن",
+    "mostSelled": "الأكثر مبيعًا",
+    "more": "المزيد",
+    "home": "الرئيسية",
+    "cart": "سلة التسوق",
+    "profile": "حسابي",
+    "products": "المنتجات"
 }

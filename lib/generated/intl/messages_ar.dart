@@ -32,11 +32,14 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("تمتلك حساب بالفعل؟ "),
         "anErrorOccurred": MessageLookupByLibrary.simpleMessage(
             "حدث خطأ ما. حاول مرة أخرى لاحقًا."),
+        "cart": MessageLookupByLibrary.simpleMessage("سلة التسوق"),
         "checkYourConection": MessageLookupByLibrary.simpleMessage(
             " تحقق من اتصالك بالإنترنت , ثم حاول مره أخرى"),
         "createAccount": MessageLookupByLibrary.simpleMessage("قم بإنشاء حساب"),
         "createNewAccount":
             MessageLookupByLibrary.simpleMessage("إنشاء حساب جديد"),
+        "discount": MessageLookupByLibrary.simpleMessage("خصم 25%"),
+        "eidVoucher": MessageLookupByLibrary.simpleMessage("عروض العيد "),
         "email": MessageLookupByLibrary.simpleMessage("البريد الالكتروني"),
         "emailAlreadyInUse": MessageLookupByLibrary.simpleMessage(
             "لقد قمت بالتسجيل مسبقا بالرجاء تسجيل الدخول"),
@@ -45,9 +48,12 @@ class MessageLookup extends MessageLookupByLibrary {
         "forgotPassword":
             MessageLookupByLibrary.simpleMessage("نسيت كلمة المرور؟"),
         "fullName": MessageLookupByLibrary.simpleMessage("الاسم كامل"),
+        "home": MessageLookupByLibrary.simpleMessage("الرئيسية"),
         "invalidEmail":
             MessageLookupByLibrary.simpleMessage("البريد الإلكتروني غير صالح"),
         "login": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
+        "more": MessageLookupByLibrary.simpleMessage("المزيد"),
+        "mostSelled": MessageLookupByLibrary.simpleMessage("الأكثر مبيعًا"),
         "newAccount": MessageLookupByLibrary.simpleMessage("حساب جديد"),
         "noUserFoundForThatEmail": MessageLookupByLibrary.simpleMessage(
             "لا يوجد مستخدم مسجل بهذا البريد الإلكتروني"),
@@ -62,12 +68,15 @@ class MessageLookup extends MessageLookupByLibrary {
         "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
         "pleaseAcceptTerms":
             MessageLookupByLibrary.simpleMessage("يرجى قبول الشروط والأحكام"),
+        "products": MessageLookupByLibrary.simpleMessage("المنتجات"),
+        "profile": MessageLookupByLibrary.simpleMessage("حسابي"),
         "registerWithApple":
             MessageLookupByLibrary.simpleMessage("تسجيل بواسطه أبل"),
         "registerWithFacebook":
             MessageLookupByLibrary.simpleMessage("تسجيل بواسطه فيسبوك"),
         "registerWithGoogle":
             MessageLookupByLibrary.simpleMessage("تسجيل بواسطه جوجل"),
+        "shoppingNow": MessageLookupByLibrary.simpleMessage("تسوق الآن"),
         "skip": MessageLookupByLibrary.simpleMessage("تخط"),
         "startNow": MessageLookupByLibrary.simpleMessage("ابدأ الان"),
         "termsAndConditions":
