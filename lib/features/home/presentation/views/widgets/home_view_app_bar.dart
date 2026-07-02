@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg_provider/flutter_svg_provider.dart';
+import 'package:fruit_hub_app/core/helper_function/get_saved_user.data.dart';
 import 'package:fruit_hub_app/core/utils/app_colors.dart';
 import 'package:fruit_hub_app/core/utils/app_images.dart';
 import 'package:fruit_hub_app/core/utils/app_styles.dart';
@@ -17,7 +18,7 @@ class HomeViewAppBar extends StatelessWidget {
             AppStyles.bodyBaseRegular.copyWith(color: AppColors.grayscale400),
       ),
       subtitle: Text(
-        'يوسف حسام',
+        getSavedUserData().name,
         style: AppStyles.bodyBaseBold.copyWith(
           color: AppColors.grayscale950,
         ),

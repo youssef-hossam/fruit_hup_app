@@ -31,10 +31,4 @@ class FirestoreService implements DatabaseService {
       return doc.exists;
     });
   }
-
-  @override
-  Future<void> saveUserDaata({required UserEntity userEntity}) async {
-    await addData(
-        path: 'users', documentId: userEntity.uid, data: userEntity.toMap());
-  }
 }
