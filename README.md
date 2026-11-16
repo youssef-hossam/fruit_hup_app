@@ -1,22 +1,66 @@
-# fruit_hub_app
+<h1 align="center">🍓 FruitHub</h1>
 
-A new Flutter project.
+<p align="center">
+  An Arabic-first fruit shopping app built with <b>Flutter</b> and <b>Firebase</b>,
+  with a separate <a href="https://github.com/youssef-hossam/fruit_hub_dash_board">admin dashboard</a> to manage products.
+</p>
 
-## Getting Started
+<p align="center">
+  <img src="https://img.shields.io/badge/Flutter-02569B?style=flat-square&logo=flutter&logoColor=white" alt="Flutter"/>
+  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black" alt="Firebase"/>
+  <img src="https://img.shields.io/badge/Clean%20Architecture-1B5E37?style=flat-square" alt="Clean Architecture"/>
+  <img src="https://img.shields.io/badge/State-Cubit-21B18F?style=flat-square" alt="Cubit"/>
+</p>
 
-This project is a starting point for a Flutter application.
+<p align="center">
+  <img src="screenshots/hero.webp" alt="FruitHub" width="100%"/>
+</p>
 
-A few resources to get you started if this is your first Flutter project:
+## 📱 Screens
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+| Splash | Onboarding | Onboarding |
+|:-:|:-:|:-:|
+| <img src="screenshots/fruit_6.webp" width="200"/> | <img src="screenshots/fruit_4.webp" width="200"/> | <img src="screenshots/fruit_5.webp" width="200"/> |
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-<img width="1440" height="3120" alt="Screenshot_1754109869" src="https://github.com/user-attachments/assets/97606120-4429-42b0-bb38-0822b3874217" />
-<img width="1440" height="3120" alt="Screenshot_1754109845" src="https://github.com/user-attachments/assets/7202dc4e-1fdd-48ec-9bd8-55c5d570fa3d" />
-<img width="1440" height="3120" alt="Screenshot_1754109836" src="https://github.com/user-attachments/assets/c4d18514-1242-45f7-9cf3-d1199a1ac644" />
-<img width="1440" height="3120" alt="Screenshot_1754109833" src="https://github.com/user-attachments/assets/2d3a0014-b5a8-4e09-be97-cd046c50ff6a" />
-<img width="1440" height="3120" alt="Screenshot_1754109830" src="https://github.com/user-attachments/assets/97a40982-f3d3-4954-9400-b01ee0d150d3" />
-<img width="1440" height="3120" alt="Screenshot_1754109780" src="https://github.com/user-attachments/assets/6665cac9-842c-402e-8bb6-acf53d64a40e" />
+| Login | Google sign-in | Home |
+|:-:|:-:|:-:|
+| <img src="screenshots/fruit_3.webp" width="200"/> | <img src="screenshots/fruit_2.webp" width="200"/> | <img src="screenshots/fruit_1.webp" width="200"/> |
+
+## ✨ Features
+
+- 🔐 **Authentication** with Firebase: email & password, **Google** and **Facebook** sign-in.
+- 👤 User data saved in **Cloud Firestore** and cached locally with `shared_preferences`.
+- 🏠 Home with offers, best-selling products and a bottom navigation bar.
+- 🌍 **Localization (Arabic / English)** with `intl`.
+- ✨ Splash & onboarding, loading overlays and clear error messages.
+
+## 🏗️ How it's built
+
+```
+lib/
+├── core/            # services, repos, errors, entities, widgets, utils
+└── features/
+    ├── splash/
+    ├── on_boarding/
+    ├── auth/        # data · domain · presentation
+    └── home/        # domain · presentation
+```
+
+- **Architecture:** Clean Architecture (data / domain / presentation) with the repository pattern.
+- **State management:** Cubit (`flutter_bloc`).
+- **Error handling:** `dartz` — `Either<Failure, T>`.
+- **DI:** `get_it`.
+- **Backend:** Firebase Auth + Cloud Firestore.
+
+## 🚀 Run it
+
+```bash
+flutter pub get
+flutter run
+```
+
+> Uses the project's Firebase config. To use your own Firebase project, run `flutterfire configure`.
+
+---
+
+<p align="center">Made with ❤️ by <a href="https://github.com/youssef-hossam">Youssef Hadwa</a></p>
