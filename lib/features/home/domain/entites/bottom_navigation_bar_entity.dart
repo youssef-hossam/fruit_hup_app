@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:fruit_hub_app/core/utils/app_images.dart';
 import 'package:fruit_hub_app/generated/l10n.dart';
 
@@ -13,21 +13,21 @@ class BottomNaavigationBarEntity {
       required this.title});
 }
 
-List<BottomNaavigationBarEntity> get bottomNavigationItems => [
+List<BottomNaavigationBarEntity> bottomNavigationItems(BuildContext context) => [
       BottomNaavigationBarEntity(
           activeIcon: Assets.imagesActiveHomeIcon,
           inActiveIcon: Assets.imagesHomeIcon,
-          title: S.current.home),
+          title: S.of(context).home),
       BottomNaavigationBarEntity(
           activeIcon: Assets.imagesActiveProductsIcon,
           inActiveIcon: Assets.imagesProductsIcon,
-          title: S.current.products),
+          title: S.of(context).products),
       BottomNaavigationBarEntity(
           activeIcon: Assets.imagesActiveShoppingCartIcon,
           inActiveIcon: Assets.imagesShoppingCardIcon,
-          title: S.current.cart),
+          title: S.of(context).cart),
       BottomNaavigationBarEntity(
           activeIcon: Assets.imagesActiveUserIcon,
           inActiveIcon: Assets.imagesUserIcon,
-          title: S.current.profile),
+          title: S.of(context).profile),
     ];

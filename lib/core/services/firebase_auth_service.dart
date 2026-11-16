@@ -1,6 +1,9 @@
 import 'dart:developer';
 
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:fruit_hub_app/core/demo/app_config.dart';
+import 'package:fruit_hub_app/core/services/shared_prefrences_singleton.dart';
+import 'package:fruit_hub_app/core/utils/backend_endpoints.dart';
 import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import 'package:fruit_hub_app/core/errors/exceptions.dart';
 import 'package:fruit_hub_app/generated/l10n.dart';
@@ -116,5 +119,23 @@ class FirebaseAuthService {
     return userCredential.user!;
   }
 
-  bool isLoggedIn() => FirebaseAuth.instance.currentUser != null;
+  bool isLoggedIn() {
+    if (kDemoMode) return true;
+    return FirebaseAuth.instance.currentUser != null &&
+        Pref.getString(BackEndEndpoints.savedUserData) != null;
+  }
+
+  Future<void> signOut() async {
+    if (!kDemoMode) {
+      // Sign out from every provider so the next login can pick an account.
+      try {
+        await GoogleSignIn().signOut();
+      } catch (_) {}
+      try {
+        await FacebookAuth.instance.logOut();
+      } catch (_) {}
+      await FirebaseAuth.instance.signOut();
+    }
+    await Pref.remove(BackEndEndpoints.savedUserData);
+  }
 }

@@ -40,5 +40,162 @@
     "home": "الرئيسية",
     "cart": "سلة التسوق",
     "profile": "حسابي",
-    "products": "المنتجات"
+    "products": "المنتجات",
+    "goodMorning": "صباح الخير !..",
+    "searchHint": "ابحث عن.......",
+    "offers": "العروض",
+    "allProducts": "منتجاتنا",
+    "resultsCount": "{count} نتائج",
+    "@resultsCount": {
+        "placeholders": {
+            "count": {
+                "type": "int"
+            }
+        }
+    },
+    "sortBy": "ترتيب حسب",
+    "sortPriceLow": "السعر: من الأقل للأعلى",
+    "sortPriceHigh": "السعر: من الأعلى للأقل",
+    "sortRating": "الأعلى تقييمًا",
+    "categoryAll": "الكل",
+    "categoryFruits": "فواكه",
+    "categoryCitrus": "موالح",
+    "categoryTropical": "استوائية",
+    "categoryBerries": "توت",
+    "currency": "جنيه",
+    "addToCart": "أضف الي السلة",
+    "addedToCart": "تمت إضافة المنتج للسلة",
+    "reviews": "المراجعات",
+    "reviewsCount": "{count} مراجعة",
+    "@reviewsCount": {
+        "placeholders": {
+            "count": {
+                "type": "int"
+            }
+        }
+    },
+    "rating": "التقييم",
+    "expiry": "الصلاحية",
+    "monthsCount": "{count} شهر",
+    "@monthsCount": {
+        "placeholders": {
+            "count": {
+                "type": "int"
+            }
+        }
+    },
+    "organic": "أورجانيك",
+    "notOrganic": "عادي",
+    "calories": "السعرات",
+    "caloriesValue": "{count} كالوري",
+    "@caloriesValue": {
+        "placeholders": {
+            "count": {
+                "type": "int"
+            }
+        }
+    },
+    "per100g": "لكل 100 جرام",
+    "cartEmptyTitle": "سلة التسوق فاضية",
+    "cartEmptySubtitle": "ابدأ أضف فواكهك المفضلة وهتلاقيها هنا",
+    "cartItemsCount": "لديك {count} منتجات في سله التسوق",
+    "@cartItemsCount": {
+        "placeholders": {
+            "count": {
+                "type": "int"
+            }
+        }
+    },
+    "checkoutWithTotal": "الدفع  {total} جنيه",
+    "@checkoutWithTotal": {
+        "placeholders": {
+            "total": {
+                "type": "String"
+            }
+        }
+    },
+    "checkout": "الدفع",
+    "shipping": "الشحن",
+    "address": "العنوان",
+    "payment": "الدفع",
+    "cashOnDelivery": "الدفع عند الاستلام",
+    "cashOnDeliveryDesc": "ادفع لما طلبك يوصلك",
+    "payOnline": "الدفع أونلاين",
+    "payOnlineDesc": "فيزا / ماستركارد",
+    "comingSoon": "قريبًا",
+    "next": "التالي",
+    "confirmOrder": "تأكيد الطلب",
+    "phone": "رقم الهاتف",
+    "addressLine": "العنوان",
+    "city": "المدينه",
+    "floor": "رقم الطابق , رقم الشقه ..",
+    "invalidPhone": "رقم الهاتف غير صحيح",
+    "orderSummary": "ملخص الطلب",
+    "subtotal": "المجموع الفرعي",
+    "delivery": "التوصيل",
+    "free": "مجاني",
+    "total": "الكلي",
+    "deliverTo": "عنوان التوصيل",
+    "paymentMethod": "وسيلة الدفع",
+    "edit": "تعديل",
+    "orderPlaced": "تم الطلب بنجاح !",
+    "orderPlacedDesc": "هنجهز طلبك ونبعتهولك في أسرع وقت",
+    "orderNumber": "رقم الطلب: {id}",
+    "@orderNumber": {
+        "placeholders": {
+            "id": {
+                "type": "String"
+            }
+        }
+    },
+    "trackOrders": "متابعة طلباتي",
+    "backToHome": "العودة للرئيسية",
+    "myOrders": "طلباتي",
+    "noOrders": "لا توجد طلبات حتى الآن",
+    "statusPending": "قيد المراجعة",
+    "statusPreparing": "جاري التجهيز",
+    "statusOnTheWay": "في الطريق",
+    "statusDelivered": "تم التوصيل",
+    "statusCancelled": "ملغي",
+    "itemsCountShort": "{count} منتجات",
+    "@itemsCountShort": {
+        "placeholders": {
+            "count": {
+                "type": "int"
+            }
+        }
+    },
+    "favorites": "المفضلة",
+    "noFavorites": "لسه مضفتش حاجة للمفضلة",
+    "language": "اللغة",
+    "arabic": "العربية",
+    "english": "English",
+    "notifications": "الإشعارات",
+    "aboutUs": "من نحن",
+    "aboutText": "فروت هب متجر أونلاين للفواكه الطازجة، بنختار الفاكهة بعناية من المزارع ونوصلها لحد باب بيتك.",
+    "logout": "تسجيل الخروج",
+    "logoutConfirm": "هل ترغب في تسجيل الخروج ؟",
+    "confirm": "تأكيد",
+    "cancel": "إلغاء",
+    "general": "عام",
+    "help": "المساعدة",
+    "search": "البحث",
+    "noResults": "عفوًا... هذه المعلومات غير متوفرة للحظة",
+    "tryAgain": "حاول مرة أخرى",
+    "freeDeliveryOffer": "توصيل مجاني",
+    "freeDeliveryDesc": "على الطلبات فوق 300 جنيه",
+    "mangoSeason": "موسم المانجو",
+    "percentOff": "خصم {percent}%",
+    "@percentOff": {
+        "placeholders": {
+            "percent": {
+                "type": "int"
+            }
+        }
+    },
+    "quantity": "الكمية",
+    "popularSearches": "الأكثر بحثًا",
+    "markAllRead": "تحديد الكل كمقروء",
+    "newLabel": "جديد",
+    "earlier": "في وقت سابق"
 }

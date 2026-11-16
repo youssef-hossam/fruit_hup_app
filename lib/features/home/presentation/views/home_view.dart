@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:fruit_hub_app/core/utils/app_images.dart';
-import 'package:fruit_hub_app/core/utils/app_styles.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:fruit_hub_app/core/cubits/products_cubit/products_cubit.dart';
+import 'package:fruit_hub_app/features/cart/presentation/views/cart_view.dart';
+import 'package:fruit_hub_app/features/home/presentation/home_tabs.dart';
 import 'package:fruit_hub_app/features/home/presentation/views/widgets/custom_bottom_navigation_bar.dart';
 import 'package:fruit_hub_app/features/home/presentation/views/widgets/home_view_body.dart';
-import 'package:fruit_hub_app/generated/l10n.dart';
+import 'package:fruit_hub_app/features/products/presentation/views/products_view.dart';
+import 'package:fruit_hub_app/features/profile/presentation/views/profile_view.dart';
 
 class HomeView extends StatefulWidget {
   static const String routeName = '/home';
@@ -15,55 +17,42 @@ class HomeView extends StatefulWidget {
 }
 
 class _HomeViewState extends State<HomeView> {
-  int selected = 0;
-  late PageController controller;
-
   @override
   void initState() {
     super.initState();
-    controller = PageController();
-  }
-
-  @override
-  void dispose() {
-    controller.dispose();
-    super.dispose();
+    HomeTabs.current.value = HomeTabs.home;
+    final cubit = context.read<ProductsCubit>();
+    if (cubit.state is! ProductsSuccess) cubit.getProducts();
   }
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Stack(
-        children: [
-          // Main Pages
-          SafeArea(
-            child: PageView(
-              controller: controller,
-              onPageChanged: (index) {
-                setState(() {
-                  selected = index;
-                });
-              },
+    return ValueListenableBuilder<int>(
+      valueListenable: HomeTabs.current,
+      builder: (context, selected, _) => PopScope(
+        canPop: selected == HomeTabs.home,
+        onPopInvoked: (didPop) {
+          if (!didPop) HomeTabs.go(HomeTabs.home);
+        },
+        child: Scaffold(
+          backgroundColor: Colors.white,
+          body: SafeArea(
+            bottom: false,
+            child: IndexedStack(
+              index: selected,
               children: const [
                 HomeViewBody(),
-                Center(child: Text('Star')),
-                Center(child: Text('Style')),
-                Center(child: Text('Profile')),
+                ProductsView(),
+                CartView(),
+                ProfileView(),
               ],
             ),
           ),
-
-          // Floating Bottom Bar
-          Positioned(
-            left: 0,
-            right: 0,
-            bottom: 0,
-            child: CustomBottomNavigationBar(
-              controller: controller,
-              selected: selected,
-            ),
+          bottomNavigationBar: CustomBottomNavigationBar(
+            selected: selected,
+            onTap: HomeTabs.go,
           ),
-        ],
+        ),
       ),
     );
   }

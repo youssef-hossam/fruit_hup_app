@@ -40,5 +40,162 @@
     "home": "Home",
     "cart": "Cart",
     "profile": "Profile",
-    "products": "Products"
+    "products": "Products",
+    "goodMorning": "Good morning!",
+    "searchHint": "Search for...",
+    "offers": "Offers",
+    "allProducts": "Our products",
+    "resultsCount": "{count} results",
+    "@resultsCount": {
+        "placeholders": {
+            "count": {
+                "type": "int"
+            }
+        }
+    },
+    "sortBy": "Sort by",
+    "sortPriceLow": "Price: low to high",
+    "sortPriceHigh": "Price: high to low",
+    "sortRating": "Top rated",
+    "categoryAll": "All",
+    "categoryFruits": "Fruits",
+    "categoryCitrus": "Citrus",
+    "categoryTropical": "Tropical",
+    "categoryBerries": "Berries",
+    "currency": "EGP",
+    "addToCart": "Add to cart",
+    "addedToCart": "Added to your cart",
+    "reviews": "Reviews",
+    "reviewsCount": "{count} reviews",
+    "@reviewsCount": {
+        "placeholders": {
+            "count": {
+                "type": "int"
+            }
+        }
+    },
+    "rating": "Rating",
+    "expiry": "Shelf life",
+    "monthsCount": "{count} months",
+    "@monthsCount": {
+        "placeholders": {
+            "count": {
+                "type": "int"
+            }
+        }
+    },
+    "organic": "Organic",
+    "notOrganic": "Regular",
+    "calories": "Calories",
+    "caloriesValue": "{count} kcal",
+    "@caloriesValue": {
+        "placeholders": {
+            "count": {
+                "type": "int"
+            }
+        }
+    },
+    "per100g": "per 100 g",
+    "cartEmptyTitle": "Your cart is empty",
+    "cartEmptySubtitle": "Add your favorite fruits and they will show up here",
+    "cartItemsCount": "You have {count} products in your cart",
+    "@cartItemsCount": {
+        "placeholders": {
+            "count": {
+                "type": "int"
+            }
+        }
+    },
+    "checkoutWithTotal": "Checkout  {total} EGP",
+    "@checkoutWithTotal": {
+        "placeholders": {
+            "total": {
+                "type": "String"
+            }
+        }
+    },
+    "checkout": "Checkout",
+    "shipping": "Shipping",
+    "address": "Address",
+    "payment": "Payment",
+    "cashOnDelivery": "Cash on delivery",
+    "cashOnDeliveryDesc": "Pay when your order arrives",
+    "payOnline": "Pay online",
+    "payOnlineDesc": "Visa / Mastercard",
+    "comingSoon": "Soon",
+    "next": "Next",
+    "confirmOrder": "Confirm order",
+    "phone": "Phone number",
+    "addressLine": "Street address",
+    "city": "City",
+    "floor": "Floor, apartment",
+    "invalidPhone": "Invalid phone number",
+    "orderSummary": "Order summary",
+    "subtotal": "Subtotal",
+    "delivery": "Delivery",
+    "free": "Free",
+    "total": "Total",
+    "deliverTo": "Deliver to",
+    "paymentMethod": "Payment method",
+    "edit": "Edit",
+    "orderPlaced": "Order placed!",
+    "orderPlacedDesc": "We are preparing your order and will deliver it soon",
+    "orderNumber": "Order number: {id}",
+    "@orderNumber": {
+        "placeholders": {
+            "id": {
+                "type": "String"
+            }
+        }
+    },
+    "trackOrders": "Track my orders",
+    "backToHome": "Back to home",
+    "myOrders": "My orders",
+    "noOrders": "No orders yet",
+    "statusPending": "Pending",
+    "statusPreparing": "Preparing",
+    "statusOnTheWay": "On the way",
+    "statusDelivered": "Delivered",
+    "statusCancelled": "Cancelled",
+    "itemsCountShort": "{count} items",
+    "@itemsCountShort": {
+        "placeholders": {
+            "count": {
+                "type": "int"
+            }
+        }
+    },
+    "favorites": "Favorites",
+    "noFavorites": "No favorites yet",
+    "language": "Language",
+    "arabic": "العربية",
+    "english": "English",
+    "notifications": "Notifications",
+    "aboutUs": "About us",
+    "aboutText": "FruitHub is an online store for fresh fruit. We pick fruit carefully from the farms and deliver it to your door.",
+    "logout": "Log out",
+    "logoutConfirm": "Do you want to log out?",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "general": "General",
+    "help": "Help",
+    "search": "Search",
+    "noResults": "Sorry, nothing matches your search",
+    "tryAgain": "Try again",
+    "freeDeliveryOffer": "Free delivery",
+    "freeDeliveryDesc": "On orders over 300 EGP",
+    "mangoSeason": "Mango season",
+    "percentOff": "{percent}% OFF",
+    "@percentOff": {
+        "placeholders": {
+            "percent": {
+                "type": "int"
+            }
+        }
+    },
+    "quantity": "Quantity",
+    "popularSearches": "Popular searches",
+    "markAllRead": "Mark all as read",
+    "newLabel": "New",
+    "earlier": "Earlier"
 }

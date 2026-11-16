@@ -3,15 +3,12 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:fruit_hub_app/constants.dart';
 import 'package:fruit_hub_app/core/utils/app_colors.dart';
-import 'package:fruit_hub_app/core/utils/app_images.dart';
 import 'package:fruit_hub_app/core/utils/app_styles.dart';
 import 'package:fruit_hub_app/core/widgets/custom_button.dart';
 import 'package:fruit_hub_app/core/widgets/custom_text_field.dart';
 import 'package:fruit_hub_app/core/widgets/password_field.dart';
 import 'package:fruit_hub_app/features/auth/presentation/cubits/sign_in_cubit/sign_in_cubit.dart';
-import 'package:fruit_hub_app/features/auth/presentation/views/register_view.dart';
 import 'package:fruit_hub_app/features/auth/presentation/views/widgets/dont_have_account_widget.dart';
-import 'package:fruit_hub_app/features/auth/presentation/views/widgets/social_register_button.dart';
 import 'package:fruit_hub_app/features/auth/presentation/views/widgets/social_register_buttons.dart';
 import 'package:fruit_hub_app/generated/l10n.dart';
 

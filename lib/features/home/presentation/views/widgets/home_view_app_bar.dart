@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg_provider/flutter_svg_provider.dart';
 import 'package:fruit_hub_app/core/helper_function/get_saved_user.data.dart';
 import 'package:fruit_hub_app/core/utils/app_colors.dart';
 import 'package:fruit_hub_app/core/utils/app_images.dart';
 import 'package:fruit_hub_app/core/utils/app_styles.dart';
+import 'package:fruit_hub_app/core/widgets/notification_button.dart';
+import 'package:fruit_hub_app/generated/l10n.dart';
 
 class HomeViewAppBar extends StatelessWidget {
   const HomeViewAppBar({super.key});
@@ -13,25 +14,15 @@ class HomeViewAppBar extends StatelessWidget {
     return ListTile(
       leading: Image.asset(Assets.imagesProfileImage, width: 44, height: 44),
       title: Text(
-        'صباح الخير !..',
+        S.of(context).goodMorning,
         style:
             AppStyles.bodyBaseRegular.copyWith(color: AppColors.grayscale400),
       ),
       subtitle: Text(
         getSavedUserData().name,
-        style: AppStyles.bodyBaseBold.copyWith(
-          color: AppColors.grayscale950,
-        ),
+        style: AppStyles.bodyBaseBold.copyWith(color: AppColors.grayscale950),
       ),
-      trailing: const CircleAvatar(
-        radius: 24,
-        backgroundColor: Color(0xffEEF8ED),
-        child: Image(
-          image: Svg(Assets.imagesNotification),
-          width: 20,
-          height: 20,
-        ),
-      ),
+      trailing: const NotificationButton(),
     );
   }
 }

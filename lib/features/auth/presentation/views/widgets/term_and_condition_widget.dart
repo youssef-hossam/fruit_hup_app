@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:fruit_hub_app/constants.dart';
 import 'package:fruit_hub_app/core/utils/app_colors.dart';
 import 'package:fruit_hub_app/core/utils/app_styles.dart';
-import 'package:fruit_hub_app/core/widgets/custom_text_field.dart';
 import 'package:fruit_hub_app/generated/l10n.dart';
 
 class TermAndConditionWidget extends StatefulWidget {
